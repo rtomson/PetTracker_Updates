@@ -1,4 +1,2 @@
-PetTracker_Updates
-==================
-
-WoW Addon - Adds pet data to PetTracker from the latest patch.
+##PetTracker Updates##
+* Adds pet data to PetTracker from the latest patch.
