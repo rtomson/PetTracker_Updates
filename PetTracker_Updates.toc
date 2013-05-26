@@ -1,0 +1,9 @@
+## Interface: 50300
+## Title: PetTracker Updates: 5.3
+## Notes: Adds pet data to PetTracker from the latest patch.
+## Author: Windrunner-US:Integer
+## Version: 5.3
+## Dependencies: PetTracker
+## X-Website: https://github.com/rtomson
+
+PetTracker_Updates.lua
