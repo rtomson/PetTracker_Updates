@@ -5,6 +5,9 @@ end
 
 -- 5.3
 local newPets = {
+    -- Pocket Reaver, Lesser Voidcaller, Phoenix Hawk Hatchling
+    [479] = {[1233] = {736,637}, [1234] = {736,637}, [1235] = {736,637}}, -- Netherstorm
+    [782] = {[1233] = {0,0}, [1234] = {0,0}, [1235] = {0,0}}, -- Tempest Keep
     -- Val'kyr
     [486] = {[1238] = {477,078,328,602,809,484}}, -- Borean Tundra
     [488] = {[1238] = {268,541,654,357,821,660}}, -- Dragonblight
@@ -22,6 +25,9 @@ local newPets = {
 }
 
 for zoneID, zone in pairs(newPets) do
+    if nil == PetTracker_Spots[zoneID] then
+        PetTracker_Spots[zoneID] = {}
+    end
     for petID, coords in pairs(zone) do
         for k, v in ipairs(coords) do coords[k] = string.format("%x", v) end
         PetTracker_Spots[zoneID][petID] = {[0] = table.concat(coords, ":")}
